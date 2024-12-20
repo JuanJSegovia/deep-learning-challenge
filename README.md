@@ -1,12 +1,12 @@
-#Neural Network Model Report
+# Neural Network Model Report
 
-##Overview of the Analysis
+## Overview of the Analysis
 
 The purpose of this analysis is to develop a deep learning binary classification model to predict the success of applicants funded by the nonprofit organization Alphabet Soup. By leveraging a dataset containing metadata about funded organizations, the model aims to identify key factors that contribute to the effective use of funds and optimize the foundation's funding decisions.
 
 The project employs neural networks to create a predictive model and evaluates its performance through various optimization techniques.
 
-##Results
+## Results
 
 Data Preprocessing
 
@@ -50,11 +50,11 @@ Data was split into training and testing sets using train_test_split().
 
 Features were scaled using StandardScaler to standardize input values for the neural network.
 
-##Compiling, Training, and Evaluating the Model
+## Compiling, Training, and Evaluating the Model
 
 Neural Network Architecture:
 
-###Initial Model:
+### Initial Model:
 
 Layers: 2 hidden layers
 
@@ -78,7 +78,7 @@ Epochs: 200
 
 Accuracy: Approximately 72.5%
 
-###Second Optimization:
+### Second Optimization:
 
 Layers: 3 hidden layers (added a third hidden layer with 10 neurons)
 
@@ -90,7 +90,7 @@ Epochs: 150
 
 Accuracy: Approximately 73%
 
-###Third Optimization:
+### Third Optimization:
 
 Layers: 3 hidden layers
 
@@ -112,11 +112,11 @@ Changed the activation function to ELU for smoother gradient flow.
 
 Increased the number of training epochs to allow the model more time to converge.
 
-##Summary
+## Summary
 
 The final optimized deep learning model achieved an accuracy of approximately 73%, which falls short of the target performance of 75%. Despite multiple attempts at optimization, including increasing the number of neurons, adding layers, changing activation functions, and tuning epochs, the model could not reach the desired threshold.
 
-###Recommendations:
+### Recommendations:
 Given the limited success of the neural network in achieving the target accuracy, it would be beneficial to explore alternative approaches, such as:
 
 Ensemble Methods: Models like Random Forest or Gradient Boosted Machines could provide better performance and interpretability.
